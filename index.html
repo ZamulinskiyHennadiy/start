@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Використання javaScript</title>
+  <script>
+    // Внутрішній JavaScript у тегу <script> в <head>
+    console.log('Привіт з секції head');
+  </script>
+</head>
+
+<body>
+  <h1>Використання JavaScript</h1>
+
+  <!-- Внутрішній JavaScript у тегу <script> в <body> -->
+  <script>
+
+    let userName = prompt("Введіть ваше ім'я:");
+    alert(`Привіт, ${userName}!`);
+
+    const CURRENT_YEAR = 2024;
+    let birthYear = prompt("Введіть ваш рік народження:");
+    let age = CURRENT_YEAR - birthYear;
+    alert(`Ваш вік: ${age} років.`);
+
+    let sideLength = prompt("Введіть довжину сторони квадрата:");
+    let perimeter = sideLength * 4;
+    alert(`Периметр квадрата: ${perimeter}`);
+  </script>
+
+  <!-- Підключення зовнішнього JavaScript -->
+  <script src="script.js"></script>
+
+  <h2>Правильні імена змінних</h2>
+  <ul>
+    <li>let firstName = "Іван";</li>
+    <li> let lastName = "Петренко";</li>
+    <li> let First_name = "Олена";</li>
+    <li> let last_name = "Коваль";</li>
+  </ul>
+
+  <h2>// Неправильні імена змінних (закоментовані)</h2>
+  <ul> /*
+    <li> let 1firstName = "Оксана"; </li>
+    <li> let last-name = "Мельник"; </li>
+    <li>let var = "Іван"; </li>
+    <li>let first name = "Сергій"; </li>
+    <li>let last@name = "Бондар";</li>
+    */
+  </ul>
+  <h2>Коментування є двох видів</h2>
+  <ul>
+    <li>1.Однорядковий коментар <p>"// коментар однорядковий"</p>
+    </li>
+    <li>2.Багаторядковий коментар <p>"/*Багаторядковий коментар*/"</p>
+    </li>
+  </ul>
+</body>
+
+</html>
